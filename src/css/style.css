@@ -48,14 +48,14 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   width: 475px;
   margin-top: 60px;
 }
 
 .promo__icon {
+  width: 108px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -91,6 +91,49 @@
 
 .promo__link a:hover {
   text-decoration: none;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 767px) {
+  .promo {
+    background: url(../img/bg.jpg) center left/cover no-repeat;
+  }
+  .promo__wrapper {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 35px;
+  }
+  .promo__header {
+    text-align: center;
+    font-size: 35px;
+  }
+  .promo__subheader {
+    text-align: center;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 490px) {
+  .promo__icons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  .promo__icon {
+    margin-top: 25px;
+    width: 80%;
+  }
 }
 
 .header {
@@ -149,6 +192,34 @@
 .header__phone:hover {
   color: #fff;
   text-decoration: none;
+}
+
+@media (max-width: 767px) {
+  .header__official {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header__contacts {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 100%;
+    margin-top: 10px;
+  }
 }
 
 .button {
