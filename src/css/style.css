@@ -241,23 +241,32 @@
   margin-top: 65px;
 }
 
-.advantages {
-  min-height: 470px;
-  padding: 73px 0 67px;
+.button_submit {
+  width: 100%;
+  height: 58px;
+  font-size: 16px;
 }
 
-.advantages__title {
+.title {
   font-weight: 700;
   font-size: 30px;
   line-height: 30px;
   color: #0D0D0D;
   text-transform: uppercase;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  text-align: center;
+}
+
+.title_white {
+  font-size: 36px;
+  color: #FFFFFF;
+  line-height: 54px;
+  text-align: left;
+}
+
+.advantages {
+  min-height: 470px;
+  padding: 73px 0 67px;
+  background: #f6f6f6;
 }
 
 .advantages__wrapper {
@@ -342,5 +351,41 @@
   .advantages__title {
     font-size: 24px;
   }
+}
+
+.feed-form {
+  width: 300px;
+  margin-top: 35px;
+}
+
+.feed-form input {
+  width: 100%;
+  height: 55px;
+  background: #FFFFFF;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 12px;
+  padding-left: 20px;
+  font-weight: 400;
+  font-size: 14px;
+  color: #4B4B4B;
+}
+
+.feed-form input:nth-child(3) {
+  margin-bottom: 20px;
+}
+
+.consultation {
+  min-height: 680px;
+  padding: 100px 0 105px;
+  background: url("../img/bg2.jpg") center center/cover no-repeat;
+}
+
+.consultation__descr {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 27px;
+  color: #FFFFFF;
+  margin-top: 10px;
 }
 /*# sourceMappingURL=style.css.map */

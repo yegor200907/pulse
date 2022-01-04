@@ -1,15 +1,7 @@
 .advantages {
     min-height: 470px;
     padding: 73px 0 67px;
-    &__title {
-        font-weight: 700;
-        font-size: 30px;
-        line-height: 30px;
-        color: #0D0D0D;
-        text-transform: uppercase;
-        display: flex;
-        justify-content: center;
-    }
+    background: #f6f6f6;
     &__wrapper {
         display: flex;
         justify-content: space-around;
